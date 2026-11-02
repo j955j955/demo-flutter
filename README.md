@@ -7,6 +7,9 @@ verifies them, freezes the card, opens a dispute and secures the account by
 calling tools that act on the app in real time. Anything it can't resolve
 goes to a human with the conversation attached.
 
+What broke along the way, and how I tracked it down, is in
+[docs/DEBUG_NOTES.md](docs/DEBUG_NOTES.md).
+
 ## Run
 
 ```bash
