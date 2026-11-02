@@ -1,0 +1,27 @@
+name: demo_wallet
+description: "Demo Wallet: in-app support by voice or chat, powered by ElevenLabs Agents."
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.2
+
+dependencies:
+  elevenlabs_agents: ^0.6.1
+  flutter:
+    sdk: flutter
+  intl: ^0.20.3
+
+dev_dependencies:
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+# device_info_plus >=12.4.0 calls NSProcessInfo.isiOSAppOnVision, which the
+# iOS 26.0 SDK (Xcode 26.0) does not have. 12.3.0 is the newest version that
+# builds with this Xcode and still satisfies livekit_client (>=12.3.0).
+dependency_overrides:
+  device_info_plus: 12.3.0

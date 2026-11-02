@@ -1,0 +1,3 @@
+#include "Generated.xcconfig"
+// Optional, git-ignored: DEVELOPMENT_TEAM for running on a device.
+#include? "Signing.xcconfig"
